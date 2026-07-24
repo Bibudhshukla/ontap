@@ -45,7 +45,7 @@ OnTap is a full-stack web application that connects customers with trusted local
 - CSS3
 - JavaScript
 - Bootstrap
-- Thymeleaf
+
 
 ### Database
 - MySQL
