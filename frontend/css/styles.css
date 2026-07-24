@@ -1,0 +1,101 @@
+:root {
+  --ot-primary: #0d9488;      /* teal-600 */
+  --ot-primary-dark: #0f766e; /* teal-700 */
+  --ot-accent: #f59e0b;       /* amber-500 */
+  --ot-dark: #0f172a;         /* slate-900 */
+  --ot-muted: #64748b;        /* slate-500 */
+  --ot-bg: #f8fafc;           /* slate-50 */
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--ot-bg);
+  color: var(--ot-dark);
+}
+
+/* Brand + buttons */
+.text-brand { color: var(--ot-primary) !important; }
+.bg-brand { background-color: var(--ot-primary) !important; }
+
+.btn-brand {
+  background-color: var(--ot-primary);
+  border-color: var(--ot-primary);
+  color: #fff;
+}
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--ot-primary-dark);
+  border-color: var(--ot-primary-dark);
+  color: #fff;
+}
+.btn-outline-brand {
+  color: var(--ot-primary);
+  border-color: var(--ot-primary);
+}
+.btn-outline-brand:hover {
+  background-color: var(--ot-primary);
+  color: #fff;
+}
+
+.navbar-brand-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: var(--ot-primary);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  color: #fff;
+  padding: 5rem 0;
+}
+
+/* Service cards */
+.service-card {
+  border: none;
+  border-radius: 14px;
+  transition: transform .2s ease, box-shadow .2s ease;
+  height: 100%;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, .12);
+}
+.service-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background-color: rgba(13, 148, 136, .1);
+  color: var(--ot-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.stat-card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, .06);
+}
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-card {
+  max-width: 440px;
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, .1);
+}
+
+.status-badge { text-transform: capitalize; }

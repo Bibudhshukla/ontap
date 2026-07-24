@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In | On-Tap</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="auth-wrapper p-3">
+    <div class="card auth-card p-4 p-md-5">
+      <div class="text-center mb-4">
+        <a href="index.html" class="text-decoration-none d-inline-flex align-items-center gap-2 mb-3">
+          <span class="navbar-brand-logo"><i class="bi bi-wrench-adjustable"></i></span>
+          <span class="fw-bold text-brand fs-4">On-Tap</span>
+        </a>
+        <h4 class="fw-bold mb-1">Welcome back</h4>
+        <p class="text-secondary mb-0">Sign in to your account</p>
+      </div>
+
+      <div id="alert" class="alert d-none" role="alert"></div>
+
+      <form id="signinForm">
+        <div class="mb-3">
+          <label class="form-label">I am a</label>
+          <select id="userType" class="form-select">
+            <option value="customer">Customer</option>
+            <option value="provider">Service Provider</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input id="email" type="email" class="form-control" placeholder="you@example.com" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input id="password" type="password" class="form-control" placeholder="password123" required />
+        </div>
+        <button type="submit" class="btn btn-brand w-100 py-2">Sign In</button>
+      </form>
+
+      <p class="text-center text-secondary mt-4 mb-0">
+        Don't have an account? <a href="signup.html" class="text-brand text-decoration-none fw-semibold">Sign up</a>
+      </p>
+      <div class="alert alert-light border mt-3 small mb-0">
+        <strong>Demo logins</strong> (password: <code>password123</code>)<br />
+        Customer: amit@example.com &middot; Provider: rajesh@example.com
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script>initSignin();</script>
+</body>
+</html>
